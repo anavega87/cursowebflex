@@ -1,0 +1,499 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*fuentes y propiedades de los textos*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+/*font-family: 'Roboto', sans-serif; */
+
+/* mobile */
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: rgb(66, 66, 66);
+    }
+    iframe {
+        width: auto;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 501px) and (max-width: 961px) {
+    body {
+        background-color: rgb(57, 57, 57);
+    }
+
+    iframe {
+        width: auto;
+    }
+}
+/* desktop */
+@media only screen and (min-width: 961px) {
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+    iframe{
+        width: auto;
+    }
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+p{
+    color: rgb(168, 168, 168);
+    font-family:'Roboto', sans-serif;
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-weight: 300;
+}
+
+.Subtitulo{
+    color: rgb(185, 185, 185);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+h1{
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 5rem;
+    margin-left: 15px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+    color: rgb(236, 236, 236);
+    font-weight: 300;
+}
+
+h4{
+    font-size: 1,5rem;
+    color: rgb(194, 194, 194);
+    font-weight: 200;
+    text-align: center;
+}
+
+/* estilos de header */
+header img{
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+
+/*alineación textos de botonera*/
+
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: sticky;   /* el header flota en su posición superior */
+    top: 0px;
+}
+
+nav{
+    width: 50%;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+/* textos de botonera */
+
+header ul a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    transition: all 0.2s; /* darle tiempo a la transición para hover */
+
+}
+
+/* efectos botonera index */
+
+
+
+.enlaces-header:hover{
+    color: rgb(95, 95, 95);
+}
+
+/* sección: index -----------------------------------------------------------------------*/
+
+
+#banner-bienvenida {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 33;
+    max-width: 33%;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .column:hover{
+    transition: all 0,2s;
+    transform: scale(101%);
+    opacity: 83%;
+  }
+
+  /* sección: index - botones */
+
+  /* ejemplo de not
+  
+  div:not(enlaces-header){
+    font size: 30px
+    }
+    para que no se le aplique el efecto */
+
+
+
+/* grilla responsive*/
+
+  @media screen and (max-width: 961px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+/* imágenes de trabajos */
+
+.trabajos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+
+.trabajos img{
+    width: 33%;
+    border-radius: 10px;
+}
+
+main{
+    background-color: #000000;
+}
+
+
+/* sección: hola -----------------------------------------------------------------------*/
+
+.main-mepresento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    margin: 150px auto;
+    width: 70%;
+
+}
+ 
+
+.wrapper img{
+    border-radius: 20px;
+    float: right;
+    opacity: 70%;
+    margin-left: 40px;
+    
+}
+
+.wrapper h1{
+    text-align: left;
+}
+
+/*sección: servicios ----------------------------------------------------------------------- */
+hr{
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 2px;
+    background: rgb(215, 215, 215);
+    margin-bottom: 50px;
+}
+
+.main-servicios{
+    background-color: black;
+}
+
+
+.foto-servicios{
+    border-radius: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+    width: 70%;
+    opacity: 60%;
+    margin-top: 20px;
+}
+
+.container-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* sección: items portfolio ----------------------------------------------------------------------- */
+
+.main-portfolio-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.main-portfolio-items{
+    background-color: black;
+    align-items: center;
+}
+
+.carousel-inner {
+    display: flex;
+    float: center;
+}
+
+
+/*sección: contacto ----------------------------------------------------------------------- */
+
+/* grilla contacto*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: 100%;
+}
+
+.container{
+  width: 85%;
+  background: #000000;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4d4d4d; /* línea divisoria */
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #595959; /* íconos de form */
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #7f7f7f; /* color de texto de íconos*/
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #7f7f7f; /* color del titulo del form */
+}
+
+.topic{
+    color: #bebebe; /* color de título de los íconos */
+}
+
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #bfbfbf; /* color del espacio para escribir*/
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #595959;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+    color: #8a8a8a;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+/* sección: footer----------------------------------------------------------------------- */
+
+
+footer{  
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* logos del footer */
+
+.enlaces-footer{
+    opacity: 40%;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+footer a{
+align-items: center;
+
+}
+
+.enlaces-footer{
+    transition: all 0.2s;
+    width: 30px;
+
+}
+.enlaces-footer:hover{
+    opacity: 60%;
+    transform: scale(1.3); /* quise hacer que crecieran en tamaño un poquito, pero no me salió*/
+}
+.enlaces-footer img{
+    margin-bottom: 15px;
+}
+
+/* grid se usa para galerías de imágenes o cosas con dirección vertical y horizontal*/
+
+
+/* grid template area deja decidir por cuadrado cuántas filas y columnas van*/
+
